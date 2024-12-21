@@ -109,6 +109,39 @@ a {
     color: #2cb5e8;
     text-decoration: none;
 }
+.trusted-section {
+  text-align: left; /* Align text to the left */
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.big-title {
+  color: white;
+  font-size: 3.8rem; /* Adjusted font size for a closer match */
+  line-height: 1.2;
+  font-weight: 600;
+  margin: 0 0 30px 0; /* Spacing below the title */
+}
+
+.start-btn {
+  display: inline-block;
+  padding: 15px 40px;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  font-size: 1.2rem; /* Slightly larger font for the button */
+  font-weight: bold;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2); /* Subtle glow effect */
+}
+
+.start-btn:hover {
+  background-color: #e0e0e0;
+  transform: translateY(-2px); /* Subtle hover animation */
+}
+
 .focus-section {
     padding: 40px 20px;
     text-align: center;
