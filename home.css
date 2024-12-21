@@ -170,6 +170,89 @@ a {
   line-height: 1.5;
   color: #aaa;
 }
+.portfolio-section {
+  padding: 40px 20px;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 50px;
+  line-height: 1.3;
+}
+
+.section-title .highlight {
+  color: #00aaff; /* Blue highlight color */
+}
+
+.funnel {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.funnel-step {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 30px;
+}
+
+.funnel-shape {
+  width: 200px;
+  height: 80px;
+  background: linear-gradient(to right, #00aaff, #0055ff);
+  border-radius: 20px 20px 0 0;
+  position: relative;
+}
+
+.funnel-shape::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -40px;
+  width: 100%;
+  height: 40px;
+  background: linear-gradient(to right, #00aaff, #0055ff);
+  border-radius: 0 0 20px 20px;
+}
+
+.universe {
+  height: 120px;
+}
+
+.focus {
+  height: 100px;
+}
+
+.core {
+  height: 80px;
+}
+
+.portfolio {
+  height: 60px;
+}
+
+.funnel-content {
+  text-align: left;
+}
+
+.funnel-content h2 {
+  font-size: 1.8rem;
+  color: white;
+  margin: 0 0 10px;
+}
+
+.funnel-content p {
+  font-size: 1.2rem;
+  margin: 0;
+  line-height: 1.4;
+} 
+
 
 .trusted-section {
   text-align: left; /* Align text to the left */
