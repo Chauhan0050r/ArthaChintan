@@ -2,147 +2,44 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css" integrity="sha512-HHsOC+h3najWR7OKiGZtfhFIEzg5VRIPde0kB0bG2QRidTQqf+sbfcxCTB16AcFB93xMjnBIKE29/MjdzXE+qw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="home.css">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- For Graphs -->
+    <title>Home</title>
 </head>
 <body>
-    <!-- logo section -->
-    <div class="header" style="margin-top: -20px;">
+    <div class="header">
         <div class="logo">
-            <!-- NEWS -->
-            <img src="xyz_processed.jpg" alt="Logo" style="float: left; width: 75px; height: 75px; margin-right: 20px;">
-
+            <img src="xyz_processed.jpg" alt="Logo" style="float: left; width: 100px; height: 100px;margin-top: 0px;margin-bottom: 0px;">
         </div>
         <nav>
             <ul>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#sportsNews">News</a></li>
+                <li><a href="./home.html"><h3>Home</h3></a></li>
+                <li><a href="./index.html"><h3>News</h3></a></li>
+                <li><a href="./contactUs.html"><h3>Contact Us</h3></a></li>
+            </ul>
             <div class="bar">
                 <i class="open fa-solid fa-bars-staggered"></i>
                 <i class="close fa-solid fa-xmark"></i>
             </div>
         </nav>
-    </div> 
+    </div>
     <br>
     <br>
     <br>
     <br>
-    <div class="trusted-section">
+    <br>
+    <div class="hero-section">
         <h1 class="big-title">Your Trusted Investment Partner</h1>
         <a href="contactUs.html" class="start-btn">Start your journey →</a>
     </div>
-    <div class="research-process">
-        <h1>
-          4 Step <span class="highlight">Research Process</span>
-        </h1>
-        <div class="steps-container">
-          <!-- Step 1 -->
-          <div class="step">
-            <div class="icon">
-              <img src="connect-dots-icon.png" alt="Connect dots icon">
-            </div>
-            <h2>Connect dots</h2>
-            <p>Thematic views based on annual reports, on-ground reports and competitive analysis.</p>
-          </div>
-          <!-- Step 2 -->
-          <div class="step">
-            <div class="icon">
-              <img src="filter-icon.png" alt="Filter icon">
-            </div>
-            <h2>Filter</h2>
-            <p>Look at basic hygiene factors and any deal breakers.</p>
-          </div>
-          <!-- Step 3 -->
-          <div class="step">
-            <div class="icon">
-              <img src="investigate-icon.png" alt="Investigate icon">
-            </div>
-            <h2>Investigate</h2>
-            <p>360-degree approach to understand on-ground situation.</p>
-          </div>
-          <!-- Step 4 -->
-          <div class="step">
-            <div class="icon">
-              <img src="risk-reward-icon.png" alt="Risk-reward icon">
-            </div>
-            <h2>Risk-reward</h2>
-            <p>What do we know that market does not?</p>
-          </div>
-        </div>
-    </div>
-    <div class="portfolio-section">
-        <h1 class="section-title">Adopting a Concentrated <span class="highlight">Portfolio Approach</span></h1>
-        <div class="funnel">
-          <!-- Universe Section -->
-          <div class="funnel-step">
-            <div class="funnel-shape universe">
-                <h2>Universe</h2>
-            </div>
-            <div class="funnel-content">
-              <p>400-500 Companies(based on Quality Filter)</p>
-            </div>
-          </div>
-          <!-- Focus Section -->
-          <div class="funnel-step">
-            <div class="funnel-shape focus">
-                <h2>Focus</h2>
-            </div>
-            <div class="funnel-content">
-              <p>150-200 Companies(based on Growth Filter)</p>
-            </div>
-          </div>
-          <!-- Core Section -->
-          <div class="funnel-step">
-            <div class="funnel-shape core">
-                <h2>Core</h2>
-            </div>
-            <div class="funnel-content">
-              <p>30-50 Companies(based on Valuation Filter)</p>
-            </div>
-          </div>
-          <!-- Portfolio Section -->
-          <div class="funnel-step">
-            <div class="funnel-shape portfolio">
-                <h2>Portfolio</h2>
-            </div>
-            <div class="funnel-content">
-              <p>8-12 Companies (with high growth potential)</p>
-            </div>
-          </div>
-        </div>
-    </div>
-    <section class="focus-section">
-        <h2>We’re <span>#InvestorFirst</span></h2>
-        <div class="focus-container">
-            <div class="box investor-focus">
-                <h3>Investor’s Focus</h3>
-                <ul>
-                    <li>Absolute Returns</li>
-                    <li>Making Money</li>
-                    <li>Long Term Horizon</li>
-                    <li>Cost Conscious</li>
-                </ul>
-            </div>
-            <div class="vs">VS</div>
-            <div class="box manager-focus">
-                <h3>Investment Manager’s Focus</h3>
-                <ul>
-                    <li>Outperforming Benchmark</li>
-                    <li>Managing Money</li>
-                    <li>Flavour of the Season</li>
-                    <li>Disregarding Costs</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    <section class="chart-section">
-        <h2>VQ Growth: TWRR performance as of 30th November 2024</h2>
-        <canvas id="barChart"></canvas>
-        <h3>VQ Growth: Value of ₹1 cr invested on day of inception</h3>
-        <canvas id="lineChart"></canvas>
-    </section>
+    <div class="about-company-section">
+        <br>
+        <br>
+        <h1>Crafting Your Ideal Portfolio</h1>
+        <img src="about_company_one.jpeg" alt="About Company" class="animated-image">
+    </div>      
     <div class="page2">
         <div class="news" id="businessNews">
             <div class="title">
@@ -151,11 +48,19 @@
             <div class="newsBox">
             </div>
         </div>
+        <div class="news" id="techNews">
+            <div class="title">
+                <h2>Technology News</h2>
+            </div>
+            <div class="newsBox">
+            </div>
+        </div>
     </div>
+
     <div class="footer">
         <div class="box">
             <div class="left">
-                <div class="categories">
+                <!-- <div class="categories">
                     <p>Categories</p>
                     <div>
                         <p>Sports</p>
@@ -166,7 +71,7 @@
                     <div>
                         <p>Technology</p>
                     </div>
-                </div>
+                </div> -->
                 <div class="contactUs">
                     <div class="contact">
                         <p>Contact Us</p>
@@ -192,13 +97,10 @@
                 </div>
             </div>
         </div>
-        <div class="copyrights" >
+        <div class="copyrights">
             Copyrights &copy; 2022 Coders Villa
         </div>
     </div>
-
-
-    <!-- Include JS -->
-    <script src="home.js"></script>
+    <script src="./home.js"></script>
 </body>
 </html>

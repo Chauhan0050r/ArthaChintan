@@ -1,120 +1,29 @@
-// Add JavaScript code to render the charts
-// Bar Chart (TWRR Performance)
-const ctxBar = document.getElementById('barChart').getContext('2d');
-new Chart(ctxBar, {
-    type: 'bar',
-    data: {
-        labels: ['1 Year', '2 Years', '3 Years', '5 Years', '10 Years', 'SI - Oct 2010'],
-        datasets: [
-            {
-                label: 'VQGrowth',
-                data: [26.83, 36.75, 22.82, 32.64, 16.83, 19.31],
-                backgroundColor: '#00aaff',
-            },
-            {
-                label: 'BSE500',
-                data: [27.01, 20.02, 16.85, 19.57, 13.97, 13.02],
-                backgroundColor: '#fff',
-            }
-        ]
-    },
-    options: {
-        responsive: true,
-        plugins: {
-            legend: {
-                labels: { color: '#fff' }
-            }
-        },
-        scales: {
-            x: { ticks: { color: '#fff' } },
-            y: { ticks: { color: '#fff' } }
-        }
-    }
-});
+// document.addEventListener("DOMContentLoaded", function () {
+//   const animatedImage = document.querySelector(".animated-image");
 
-// Line Chart (Investment Value)
-// const ctxLine = document.getElementById('lineChart').getContext('2d');
-// new Chart(ctxLine, {
-//     type: 'line',
-//     data: {
-//         labels: ['1 Year', '2 Years', '3 Years', '5 Years', '10 Years', 'SI - Oct 2010'],
-//         datasets: [
-//             {
-//                 label: 'VQGrowth',
-//                 data: [26.83, 36.75, 22.82, 32.64, 16.83, 19.31],
-//                 backgroundColor: '#00aaff',
-//             },
-//             {
-//                 label: 'BSE500',
-//                 data: [27.01, 20.02, 16.85, 19.57, 13.97, 13.02],
-//                 backgroundColor: '#fff',
-//             }
-//         ]
-//     },
-//     options: {
-//         responsive: true,
-//         plugins: {
-//             legend: {
-//                 labels: { color: '#fff' }
-//             }
-//         },
-//         scales: {
-//             x: { ticks: { color: '#fff' } },
-//             y: { ticks: { color: '#fff' } }
-//         }
+//   // Function to check visibility in the viewport
+//   function isInViewport(element) {
+//     const rect = element.getBoundingClientRect();
+//     return (
+//       rect.top >= 0 &&
+//       rect.left >= 0 &&
+//       rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+//       rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+//     );
+//   }
+
+//   // Event listener for scrolling
+//   function handleScroll() {
+//     if (isInViewport(animatedImage)) {
+//       animatedImage.classList.add("visible");
+//       window.removeEventListener("scroll", handleScroll); // Remove event after animation
 //     }
-// });
-// Get the canvas element by its ID
-const ctxLine = document.getElementById('lineChart');
+//   }
 
-// Check if the canvas element is not null
-if (ctxLine !== null) {
-    // Create a new chart instance
-    new Chart(ctxLine, {
-        type: 'line',
-        data: {
-            labels: ['1 Year', '2 Years', '3 Years', '5 Years', '10 Years', 'SI - Oct 2010'],
-            datasets: [
-                {
-                    label: 'VQGrowth',
-                    data: [26.83, 36.75, 22.82, 32.64, 16.83, 19.31],
-                    backgroundColor: '#00aaff',
-                    borderColor: '#00aaff',
-                    borderWidth: 2,
-                    pointBackgroundColor: '#00aaff',
-                    pointBorderColor: '#00aaff',
-                    pointBorderWidth: 2,
-                    pointRadius: 4,
-                    pointStyle: 'circle'
-                },
-                {
-                    label: 'BSE500',
-                    data: [27.01, 20.02, 16.85, 19.57, 13.97, 13.02],
-                    backgroundColor: '#fff',
-                    borderColor: '#fff',
-                    borderWidth: 2,
-                    pointBackgroundColor: '#fff',
-                    pointBorderColor: '#fff',
-                    pointBorderWidth: 2,
-                    pointRadius: 4,
-                    pointStyle: 'circle'
-                }
-            ]
-        },
-        options: {
-            responsive: true,
-            plugins: {
-                legend: {
-                    labels: { color: '#fff' }
-                }
-            },
-            scales: {
-                x: { ticks: { color: '#fff' } },
-                y: { ticks: { color: '#fff' } }
-            }
-        }
-    });
-}
+//   window.addEventListener("scroll", handleScroll);
+//   handleScroll(); // Initial check in case it's already in view
+// });
+
 let breakingImg = document.querySelector('#breakingImg')
 let breakingNews_title = document.querySelector('#breakingNews .title')
 let breakingNews_desc = document.querySelector('#breakingNews .description')
@@ -153,7 +62,7 @@ window.addEventListener('scroll',()=>{
 
 // fetching news data from a website providing api
 
-const apiKey = "bdd41c733d124b519cda85514324c1a1"
+const apiKey = "b1be20e647444741abb20039f50db951"
 
 const fetchData = async (category,pageSize)=>{
     const url = `https://newsapi.org/v2/top-headlines?country=us&category=${category}&pageSize=${pageSize}&apiKey=${apiKey}`
