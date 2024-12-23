@@ -187,8 +187,8 @@ nav ul li a{
   text-align: center;
   margin-bottom: 20px; /* Space before the Business News section */
   background-color: black;
-  margin: 0; /* Remove margins */
-  padding: 0; /* Remove padding */
+  margin: 20px; /* Remove margins */
+  padding: 50px; /* Remove padding */
 }
 
 /* .animated-image {
@@ -373,7 +373,7 @@ nav ul li a{
     transform: translateX(100%); /* Initially positioned off-screen to the right */
     animation: slide-in 1s ease-out forwards; /* Trigger the slide-in animation */
     background-color: black;
-    text-align: center;
+    text-align: left;
     margin-left: 285px;
   }
   
